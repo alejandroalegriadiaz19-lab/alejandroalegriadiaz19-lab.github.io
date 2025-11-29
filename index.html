@@ -1,246 +1,178 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Super Transistor - Componentes Electrónicos</title>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #3edd70;
-        color: #000000;
-    }
-    header {
-        text-align: center;
-        background-color: #000000;
-        color: rgb(221, 200, 215);
-        padding: 10px 0;
-    }
-    header img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-    nav {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 200px;
-        height: 100%;
-        background-color: #222;
-        padding-top: 20px;
-        overflow-y: auto;
-    }
-    nav a {
-        display: block;
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    nav a:hover {
-        background-color: #555;
-        cursor: pointer;
-    }
-    main {
-        margin-left: 220px;
-        padding: 20px;
-    }
-    section {
-        background-color: white;
-        padding: 15px;
-        margin-bottom: 25px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
-    }
-    section img {
-        width: 100%;
-        max-width: 400px;
-        display: block;
-        margin: 10px auto;
-        border-radius: 10px;
-        
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-        background-color: #b2f0e8;
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 12px;
-    }
-    h2 {
-        color: #007bff;
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 5px;
-    }
-    ol {
-        margin-left: 20px;
-    }
-    footer {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
-    footer a {
-        color: #00ccff;
-        margin: 0 5px;
-    }
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    button:hover {
-        background-color: #0056b3;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroDesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/css.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#inicio" title="Volver al inicio">Inicio</a>
-        <a href="#productos" title="Qué vendemos">Productos</a>
-        <a href="#capacitor" title="Ver capacitores">Capacitores</a>
-        <a href="#resistencia" title="Ver resistencias">Resistencias</a>
-        <a href="#diodo" title="Ver diodos">Diodos</a>
-        <a href="#transistor" title="Ver transistores">Transistores</a>
-        <a href="#led" title="Ver LEDs">LEDs</a>
-        <a href="#comprar" title="Finalizar compra"> Comprar</a>
-    </nav>
 
-    <main>
-        <header id="inicio">
-            <img src="o.jfif" alt="Componentes electrónicos">
-            <h1>SUPER TRANSISTOR |-°V°-|</h1>
-            <p>Tu tienda de confianza para adquirir los mejores componentes electrónicos del mercado. Ofrecemos una amplia variedad de piezas, desde resistencias hasta transistores avanzados, con calidad garantizada.</p>
-        </header>
-
-        <!-- Sección 1: Productos / Qué vendemos -->
-        <section id="productos">
-            <h2>¿Qué vendemos en Super Transistor?</h2>
-            <p>En Super Transistor nos especializamos en la venta de componentes electrónicos de alta calidad, ideales para estudiantes, técnicos, ingenieros y aficionados a la electrónica. Nuestra misión es ofrecer productos confiables a precios competitivos, facilitando el desarrollo de proyectos eléctricos y electrónicos.</p>
-
-            <p>Contamos con una amplia variedad de dispositivos, desde componentes básicos como resistencias y capacitores, hasta microcontroladores, sensores y módulos de comunicación para aplicaciones más avanzadas. Todos nuestros productos son verificados y, cuando aplica, probados para garantizar su correcto funcionamiento.</p>
-
-            <p>Además de venta al por menor, ofrecemos kits para aprendizaje, materiales para prototipado (placas de pruebas, cables, conectores) y repuestos para mantenimiento. Brindamos asesoría personalizada para ayudar a elegir componentes adecuados según el proyecto —educativo o profesional— y proporcionamos información técnica (hojas de datos) cuando es necesario.</p>
-        </section>
-
-        <!-- Capacitores -->
-        <section id="capacitor">
-            <h2>Capacitores</h2>
-            <p>Los capacitores son componentes que almacenan energía eléctrica en forma de carga. Se emplean para filtrar ruidos, suavizar fuentes, acoplar o desacoplar señales y temporizar circuitos. Su comportamiento depende de la capacidad (µF, nF, pF), la tensión máxima y el material dieléctrico.</p>
-            <img src="data:image/png;base64,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" alt="Capacitores" width="100%" height="200px">
-            <h3>Tipos de capacitores (ejemplos y usos)</h3>
-            <ol>
-                <li><input type="checkbox"> Electrolítico — 4000 µF 25V: uso en fuentes para filtrado de salida.</li>
-                <li><input type="checkbox"> Electrolítico — 2200 µF 50V: adecuado para circuitos con mayor tensión.</li>
-                <li><input type="checkbox"> Cerámico — 100 nF (desacoplo): colocados cerca de IC para reducción de ruido.</li>
-                <li><input type="checkbox"> Cerámico — 1 µF (alta frecuencia): filtrado de señales RF y estabilidad.</li>
-                <li><input type="checkbox"> Tantalio — 100 µF 16V: mayor estabilidad en aplicaciones donde el espacio es crítico.</li>
-                <li><input type="checkbox"> Poliéster — 0.47 µF 100V: acoplamiento y aplicaciones de audio.</li>
-                <li><input type="checkbox"> Supercapacitor — 1F 5.5V: almacenamiento temporal de energía en micro-sistemas.</li>
-                <li><input type="checkbox"> Variable — 10 pF a 100 pF: ajuste fino en circuitos resonantes.</li>
-                <li><input type="checkbox"> Piezoeléctrico — discos para buzzer o sensor: conversión vibración/voltaje.</li>
-                <li><input type="checkbox"> Polímero — 330 µF 16V: baja ESR para fuentes con conmutación rápida.</li>
-            </ol>
-        </section>
-
-        <!-- Resistencias -->
-        <section id="resistencia">
-            <h2>Resistencias</h2>
-            <p>Las resistencias limitan el flujo de corriente y dividen voltajes. Se usan en casi todo circuito electrónico: polarizar transistores, limitar corriente de LEDs, crear divisores de tensión o formar filtros junto con capacitores.</p>
-            <img src="data:image/jpeg;base64,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" alt="Resistencias" width="1%" height="150px">
-            <h3>Tipos y valores (ejemplos prácticos)</h3>
-            <ol>
-                <li><input type="checkbox"> 100 Ω — Uso: protección de LEDs de baja potencia.</li>
-                <li><input type="checkbox"> 220 Ω — Uso: limitador de corriente para LEDs estándar.</li>
-                <li><input type="checkbox"> 330 Ω — Uso: divisores y pequeñas cargas en señales.</li>
-                <li><input type="checkbox"> 470 Ω — Uso: polarización y pequeñas resistencias de carga.</li>
-                <li><input type="checkbox"> 1 kΩ — Uso: entradas digitales y divisores.</li>
-                <li><input type="checkbox"> 4.7 kΩ — Uso: pull-up/pull-down en microcontroladores.</li>
-                <li><input type="checkbox"> 10 kΩ — Uso: potenciómetros y ajustes de sensor.</li>
-                <li><input type="checkbox"> 22 kΩ — Uso: filtros RC de baja frecuencia.</li>
-                <li><input type="checkbox"> 100 kΩ — Uso: redes de temporización y alta impedancia.</li>
-                <li><input type="checkbox"> 1 MΩ — Uso: sensores de campo y circuitos de muy baja corriente.</li>
-                <li><input type="checkbox"> Potenciómetro 10 kΩ (variable) — Uso: control de volumen o ajuste.</li>
-                <li><input type="checkbox"> Resistencia de precisión 0.1% — Uso: calibración y mediciones.</li>
-            </ol>
-        </section>
-
-        <!-- Diodos -->
-        <section id="diodo">
-            <h2>Diodos</h2>
-            <p>Los diodos son componentes que permiten el paso de corriente en un solo sentido; su aplicación más común es la rectificación de AC a DC. También se usan como referencia de voltaje (Zener), como detectores de luz (fotodiodos) o como fuentes de luz (LED).</p>
-            <img src="https://admin.pcbasic.com/Uploads/files/20250808/03c3e590365ce33d410d035f8f846769.webp" alt="Diodos" width="15%" height="130px">
-            <h3>Tipos y ejemplos</h3>
-            <ol>
-                <li><input type="checkbox"> Diodo 1N4007 — Rectificador general (hasta 1 A, 1000 V).</li>
-                <li><input type="checkbox"> Diodo Schottky — Baja caída (ideal en fuentes conmutadas).</li>
-                <li><input type="checkbox"> Diodo Zener 5.1V — Regulación de referencia de voltaje.</li>
-                <li><input type="checkbox"> LED rojo 5mm — Indicadores y señalización.</li>
-                <li><input type="checkbox"> LED blanco alta potencia — Iluminación de focos o paneles.</li>
-                <li><input type="checkbox"> Fotodiodo — Detección de luz en sistemas ópticos.</li>
-                <li><input type="checkbox"> Varicap — Sintonización en RF (circuitos resonantes).</li>
-                <li><input type="checkbox"> Diodo TVS — Protección transitoria contra picos.</li>
-            </ol>
-        </section>
-
-        <!-- Transistores -->
-        <section id="transistor">
-            <h2>Transistores</h2>
-            <p>Los transistores controlan señales y corrientes: pueden amplificar señales pequeñas o actuar como interruptores rápidos. Se encuentran en configuraciones como amplificador de audio, conmutación de potencia o en etapas lógicas.</p>
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQBhMRDxIWEA4PEA8PFhAOEhAQDxYPFxEWFhUVFRMYHSggGBolGxMVITEhJiorLi46GB8zODMtOSgtOisBCgoKDg0OGhAPFysaHR0rLS0tKy0rKystKy0rKys3NystKzcrKystMCstLSstKystKysrKy0tKystKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAgCBwH/xABKEAEAAQICBAcKBw4HAAAAAAAAAQIDBBEFBhIhMUFRcXORshMkNDVhgYKhscEHIiU2Y3K0FBYyM0JUdJKjs8LR4fAjJkNSYpOi/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREBAQEBAQEAAAAAAAAAAAAAAAFBMSER/9oADAMBAAIRAxEAPwD7gAAAAAAAAAAh72tOAoy28Vap2omY2q4jOInKZjljOMtyYc7a7z3nhOgv/aqwfbPvy0Z+eWf+yH5OumjPzyz+vDmYmoV0v9++i/zyz+u9Ua6aNqqypxdqZ5Iqmfc5jqlKaB8Lp9L2A6hwuJou4em5bqiu3XGcVU8EwyobU75r4foo9spkQAAAAAAAAAAAAAAAAAAAAAAc6a6+C4XosR9prdFudddvBML5LeI+01KKllubmCoq+5LlWU1W8pp2Ypzzrmmcs926I/Cz/m/LNqmrBTlGVcRnnM75+PEZxxbMROU+WW1Th6JvURsxEXKrtE5TXls055VRnPDu5kVh0zRTEU7HFM017v8AUppoiY6ve9aB8Lj0vYwY3DxRg7cxvqqm5tVRyxs7vNnLPoHwqPS9gOjtT/mxh+ij2ymEPqh82MP0NKYEAAAAAAAAAAAAAAAAAAAAAAHOmuvg+G+piftNTotzrrpT3vh/q4r7TKwVez3Sq3s07U0ROcxGeUcefqbk7P3bszVcnbqmiZ24qqnfs057utHxbnNsfdFXd5rimIqmJ4IndM/lRv4UV7xOGiMHtbUzlPL8Xfcqp3fqxLLoKe+49L2NW7fqm1s7OUbMU8fFVtROXFwzwcra0FHfkekDo7VD5s4foqUwiNUY/wAs4foaUuIAAAAAAAAAAAAAAAAAAAAAAPmusHwbbViu7TirlXcqLtduzNq3MZ76tnOOWeN9Kaukr0UYSrlmJpjnn+mYPldn4M6L1y9VN+7bizsxFvD026tqdja/L453cbRs6g53pw/drlNdWIpt0X7tumKu4za25mbeUb9qmqmOZ9S1Xzqw927MZRdvTNPlopopoz66annSlHy3Znj7rb7Fxj54199UPF/BVRh9i5bxN2//AIlNNVu9TZijZmJ3/FpieHJ+6I+Cyi7Zi9VjLtFVU1/Et0WtmMqpjdnHBufTdJ25qwc5cMZVbvJObR1ZxG1gqqJ3V26684/41VTVEx5N89S/PT74kNH4SmxgqLVGexbpimNqZmco5ZbANMgAAAAAAAAAAAAAAAAAAAAACsaVu1YnSNOHtzlTVEzVVHDTaifjVc88Ec8JzSl7Ywk5cefVlnP9+Vp6uYPZwnda/wAbfyrmeSj8imPNOfPMpViUs2qaLUU0xs00xFMRHBFMRlEInSlOelrPkuUTu+rXG/rTKMxsfKdvi30z7QiTVvSFFWF0hF6iM6OCYjjo46fNxeZZGDGYeLliaZ83OqMlq5FdqKqZzpqiJiY5HtDaCu7OIrsTwUxF2iOSmqfjU+ar2pkgAAAAAAAAAAAAAAAAAAAAAAidY57z9G52Uhgo7zo+pR2YR2skd5ejc69lI4LwOj6lHZhNVmQOmq5jTOGynKKrtNM+WMqpy/vkTyv6ej5YwvT2/ZWUiwAKiAwm7WnLlsX/AFXaf5p9ARu1qo8tF+PXFXuT6RaAKgAAAAAAAAAAAAAAAAAAACK1i8C81fZlvYGe8rfR0dmGnrDHyfPpdmW3o/wC30dvswmjYQGn/GuF6e17ak+gtPx8oYac8u+LPVtVF4s6nQFRAYmctaLPlm7H7CZ9yfV/SO7WPDz9LVHXYmFgRQBUAAAAAAAAAAAAAAAAAAAARun4+T58/Zls6N8XWuit9iGvp7xfOXl7MtjRfi210VvsQmq2UDrFVEYvD/pFjtzCeV/Wf8fh55MThuHpMi8J1YAFRX9N7tMYefprXrzpWBXtY5yx1ifpsN+9WFFAFQAAAAAAAAAAAAAAAAAAABHae8Xz5+zLNonxXZ6G12IYtO+Azz/w1MuiPFVnobXYhNG2r+tM5VWP0nC/vYj3rAr+tf4Fr9Iw0/toKsWABUV7Wrd3OrkuWZ6rmawq9rjHeMTyb+qqJWFNABQAAAAAAAAAAAAAAAAAAABH6b8Ann/hlk0N4os9Da7EMenPAJ5/dLJoXxRZ6G32ITVbiH1hsxVFvPPKLtud3DnFdMwmERrDdpot0TVOUbdPL/upiODyqkS4AIHXCnPRc/Vr9yctTnaieWIn1InWenPR081Uf+f6JDR9WeAtzy2rc9dMIrYAVAAAAAAAAAAAAAAAAAAAAGhpvwGef3S/dB+JrPQ2+zDzpyrLATPlj2S9aC8S2Oht9mE1cbyv64+BU/XonquULAr2uM95RHLMequiSk6sICojdP056Pnnns1Mmg6s9DWJ+htdiDTMd4zz0+vd72LVurPQdrKc8qNnqqmPcmriTAVAAAAAAAAAAAAAAAAAAAAGLE4ei5amm5TFdM8VUZw9WbVNFqKaIimmmIpimmMoiI4IiHsAaGltHRiLWzNWzwxnEZ8cT/C3wAAHi9aprtzTXEVUzwxVETHVL9tW6abcU0xFNMboimIiIjyRD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASABxAAAAAAAAAAAAAAAAAAAAAAAAcQAAAP//Z" alt="Transistores" height="250px" width="20%">
-            <h3>Modelos y usos</h3>
-            <ol>
-                <li><input type="checkbox"> BC547 (NPN) — Uso: amplificadores de señal baja.</li>
-                <li><input type="checkbox"> BC557 (PNP) — Uso: etapas complementarias en amplificadores.</li>
-                <li><input type="checkbox"> IRF540 (MOSFET N) — Uso: conmutación de potencia.</li>
-                <li><input type="checkbox"> IRF9540 (MOSFET P) — Uso: etapas de potencia complementarias.</li>
-                <li><input type="checkbox"> TIP120 (Darlington) — Uso: control de motores y cargas altas.</li>
-                <li><input type="checkbox"> 2N2222 (NPN) — Uso general en conmutación rápida.</li>
-                <li><input type="checkbox"> 2N3055 (BJT de potencia) — Uso: etapas de potencia lineal.</li>
-            </ol>
-        </section>
-
-        <!-- LEDs -->
-        <section id="led">
-            <h2>LEDs</h2>
-            <p>Los LEDs convierten corriente en luz con gran eficiencia. Se emplean en displays, señalización, iluminación y proyectos de iluminación direccionable (LED RGB y tiras LED).</p>
-            <img src="https://www.barcelonaled.com/blog/wp-content/uploads/2024/06/diodos-colores.jpg" alt="LEDs" width="25%">
-            <h3>Tipos y aplicaciones</h3>
-            <ol>
-                <li><input type="checkbox"> LED rojo 5mm — Indicador simple.</li>
-                <li><input type="checkbox"> LED verde 5mm — Indicador simple.</li>
-                <li><input type="checkbox"> LED azul 5mm — Señalización y efectos.</li>
-                <li><input type="checkbox"> LED blanco alta potencia — Iluminación dirigida.</li>
-                <li><input type="checkbox"> LED RGB WS2812 (direccionable) — Proyectos de iluminación programable.</li>
-                <li><input type="checkbox"> Tira LED 5V/12V — Iluminación decorativa.</li>
-                <li><input type="checkbox"> Lente difusora para LEDs — Uso en luminarias.</li>
-            </ol>
-        </section>
-
-        <div style="text-align:center; margin: 30px 0;">
-            <button id="comprar" type="reset">Comprar</button>
+    <nav class="nav">
+        <div class="logo">
+            <img src="imgs/logo.png" class="logo__img" alt="logo">
+            <h3>ElectroDesign</h3>
         </div>
-    </main>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Clientes</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contactos</a></li>
+            <li class="menu__item"><a class="menu__link button" href="#">Cotizar proyecto</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__title">Soluciones Electrónicas Integrales a tu Medida</div>
+        <p class="header__text">Ofrecemos diseño de vanguardia, asesoramiento experto y venta de componentes de alta
+            calidad para llevar tus proyectos al siguiente nivel.</p>
+        <div class="">
+            <a class="button" href="#">Ver servicios</a>
+        </div>
+    </header>
+    <main>
+        <section class="services">
+            <div>
+                <h2 class="services__title">Nuestros Servicios</h2>
+                <p class="services__description">Cubrimos todo el ciclo de la vida de tu producto, desde la concepción
+                    hasta la producción.</p>
+                <div class="service__text"></div>
+            </div>
+            <section class="cards">
+                <article class="card">
+                    <i class="bi bi-cpu"></i>
+                    <header class="card__title">
+                        Diseño Electrónico</header>
+                    <p class="card__text">Creamos circuitos innovadores y eficientes para tus necesidades específicas.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <header class="card__title">Diseño de PCB</header>
+                    <p class="card__text">Diseñamos placas de circuito impreso optimizadas para rendimiento y
+                        fabricación.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-person-workspace"></i>
+                    <header class="card__title">Asesoramiento Técnico</header>
+                    <p class="card__text">Te guiamos con nuestra experiencia para asegurar el éxito de tu proyecto.</p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-robot"></i>
+                    <header class="card__title">Venta de Componentes</header>
+                    <p class="card__text">Accede a un amplio catálogo de componentes electrónicos de alta calidad.</p>
+                </article>
+            </section>
 
-    <footer>
-        <p>© 2025 Super Transistor. Todos los derechos reservados.</p>
-        <a href="#inicio">Inicio</a> |
-        <a href="#productos">Productos</a> |
-        <a href="#capacitor">Capacitores</a> |
-        <a href="#resistencia">Resistencias</a> |
-        <a href="#diodo">Diodos</a> |
-        <a href="#transistor">Transistores</a> |
-        <a href="#led">LEDs</a>
-        <p>📧 <a href="mailto:contacto@supertransistor.com">contacto@supertransistor.com</a> |
-        ☎ <a href="tel:+529291234567">+52 929 123 4567</a></p>
+        </section>
+        <!--
+        <section class="client">
+            <h2 class="client__title">Lo que dicen nuestros clientes</h2>
+            <section class="client__cards">
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"El equipo de ElectroDesign transformó nuestra idea en un producto funcional
+                        en tiempo récord. Su asesoramiento fue clave para el éxito."</p>
+                    <footer><span class="card2__name">Juan Pérez</span><span class="card2__profile">CEO,
+                            InnovaTech</span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"La calidad de los componentes y la rapidez en la entrega son insuperables.
+                        Son nuestro proveedor de confianza."</p>
+                    <footer><span class="card2__name">Ana García</span>Directora de I+D, Soluciones Futuras<span
+                            class="card2__profile"></span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"Desde el diseño del PCB hasta la selección de componentes, su equipo
+                        demostró un profesionalismo y conocimiento excepcionales."</p>
+                    <footer><span class="card2__name">Carlos Rodríguez</span><span class="card2__profile">Ingeniero
+                            Jefe, Gadget Co.</span></footer>
+                </article>
+            </section>
+        </section> -->
+
+        <section class="contact">
+            <h2 class="contact__title">Hablemos de tu proyecto</h2>
+            <section class="contact__container">
+                <div class="form">
+                    <h2 class="contact__title">Enviar mensaje</h2>
+                    <form class="contact__form">
+                        <!-- <label for="name">Nombre:</label> -->
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Nombre" required>
+                        <!-- <label for="email">Correo:</label> -->
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Asunto" required>
+                        <!-- <label for="message">Tu mensaje</label> -->
+
+                        <textarea class="form__input textarea" id="message" name="message" placeholder="Tu mensaje"
+                            rows="8" required></textarea>
+
+                        <input type="submit" value="Enviar Mensaje" class="button">
+                    </form>
+                </div>
+                <div class="info">
+                    <h2 class="contact__title">Información de Contacto</h2>
+                    <div class="info__container">
+                        <i class="bi bi-pin-map-fill"></i>
+                        <div class="info__text"></i> Av. de la Tecnología 123, Parque Tecnológico, 28001 Coatzacoalcos, Veracruz, Mexico</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div class="info__text"> +52 921 345 678</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div class="info__text"> contacto@electrodesign.com</div>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1386.8451815640947!2d-94.42553197362753!3d18.139468937920586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e982588fffffff%3A0x12a620cf1087c4de!2sCBTIS%20n%C2%B085!5e0!3m2!1sen!2smx!4v1762985460409!5m2!1sen!2smx"
+                
+                        class="map" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Servicios</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Clientes</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Legal</h2>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Política de privacidad</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Términos y condiciones</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Síguenos</h2>
+            <ul class="footer__list footer__networks">
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-facebook"></i></a></li>
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-twitter"></i></a></li>
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-youtube"></i></a></li>
+            </ul>
+        </section>
     </footer>
+    <div class="footer__copy">
+        <h3>&#169; 2024 ElectroDesign. Todos los derechos reservados.</h3>
+    </div>
 </body>
+
 </html>
